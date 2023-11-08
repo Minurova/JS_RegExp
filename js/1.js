@@ -51,8 +51,8 @@ alert("Строка содержит либо спецсимвол, либо ц�
 function task5()
 {
     let str=prompt("Введите строку");
-    let letters=str.match(/[A-ZА-Я]/gi).length;
-    let numbers=str.match(/[0-9]/gi).length;
+    let letters=str.replace(/\d/gi,'');
+    let numbers=str.replace(/\D/g,'');
     console.log(str);
-    console.log('количество букв = ' + letters + ', количество цифр = ' + numbers);
+    console.log('количество букв = ' + letters.length + ', количество цифр = ' + numbers.length);
 }
