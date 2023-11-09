@@ -15,7 +15,7 @@ function task1()
 function task2()
 {
     function isName (name) {
-        let re = /^([a-zA-Z\_\$])+[\dA-Za-z]*$/;                       
+        let re = /^([a-zA-Z\_\$])+[\dA-Za-z\_]*$/;                       
         return name.search(re);
         }
         let name = prompt("Введите название переменной JS");
