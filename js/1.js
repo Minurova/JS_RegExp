@@ -52,7 +52,7 @@ function task5()
 {
     let str=prompt("Введите строку");
     let letters=str.replace(/\d/gi,'');
-    let numbers=str.replace(/\D/g,'');
+    let numbers=str.replace(/[A-Za-zА-Яа-я]/g,'');
     console.log(str);
     console.log('количество букв = ' + letters.length + ', количество цифр = ' + numbers.length);
 }
